@@ -1,0 +1,18 @@
+{
+  "name": "docker_nodejs_express",
+  "version": "1.0.0",
+  "description": "C'est mon premier projet avec docker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-perso:NyAary29/Docker_nodejs_express.git"
+  },
+  "author": "NyAary29",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

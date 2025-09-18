@@ -1,0 +1,24 @@
+services:
+    app:
+        build: .
+        depends_on:
+            - postgres
+        environment:
+            DATA_BASE_URL : postgres://user:pass@postgres:5432/db
+            NODE_ENV : development
+        ports:
+            - "3000:3000"
+        
+    
+    postgres:
+        image : postgres:alpine
+        environment:
+            POSTGRES_PASSWORD: postegres
+        volumes:
+            - data:/var/lib/postgresql/data
+
+volumes:
+    data:
+ 
+
+
